@@ -31,23 +31,21 @@ echo -e $green '#                 \/    88         88.            #'
 echo -e $green '#                         88         88.          #'
 echo -e $green '#################################$%$$$$$$$$$$$$$$++'
 echo ""
-echo -e $green '#     ########################################'
-echo -e $green '#     #      copy right Mohammed Info        #'                     
-echo -e $green '#     #          2018/8/7 , v 1.0            #'
-echo -e $green '#     #            from : Yemen              #'
-echo -e $green '#     #        whatsapp:+967733014747        #'
-echo -e $green '#     ########################################'
+echo -e $green '     ########################################'
+echo -e $green '     #      copy right Mohammed Info        #'                     
+echo -e $green '     #          2018/8/7 , v 1.0            #'
+echo -e $green '     #            from : Yemen              #'
+echo -e $green '     #        whatsapp:+967733014747        #'
+echo -e $green '     ########################################'
 echo ""
-echo -e $green '#      "wellcome in my Tools-Fix. v1.0"'
-echo -e $green '#      "$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$"'
+echo -e $green '      "wellcome in my Tools-Fix. v1.0"'
+echo -e $green '      "$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$"'
 
 echo ""
 echo ""
 echo -e $green   "1- Fix error kali linux"
 echo ""
-echo -e $green   "2- Fix error Termux"
-echo ""
-echo -e $green   "3- About me"
+echo -e $green   "2- About me"
 echo ""
 echo -e $green   "0- EXIT |-|"
 echo "" 
@@ -81,15 +79,15 @@ echo -e $green '#                 \/    88         88.            #'
 echo -e $green '#                         88         88.          #'
 echo -e $green '#################################$%$$$$$$$$$$$$$$++'
 echo ""
-echo -e $green '#     ########################################'
-echo -e $green '#     #      copy right Mohammed Info        #'                     
-echo -e $green '#     #          2018/8/7 , v 1.0            #'
-echo -e $green '#     #            from : Yemen              #'
-echo -e $green '#     #        whatsapp:+967733014747        #'
-echo -e $green '#     ########################################'
+echo -e $green '     ########################################'
+echo -e $green '     #     copy right Mohammed Info        #'
+echo -e $green '     #          2018/8/7 , v 1.0            #'
+echo -e $green '     #            from : Yemen              #'
+echo -e $green '     #        whatsapp:+967733014747        #'
+echo -e $green '     ########################################'
 echo ""
-echo -e $green '#      "wellcome in my Tools-Fix. v1.0"'
-echo -e $green '#      "$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$"'
+echo -e $green '      "wellcome in my Tools-Fix. v1.0"'
+echo -e $green '      "$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$"'
 
 echo ""
 echo ""
@@ -138,11 +136,11 @@ echo -e $yellow "past: deb http://http.kali.org/kali kali-rolling main contrib n
 echo -e $yellow "ctrl + x "
 echo -e $yellow "Y then enter "
 echo -e $yellow "if you want auto fix this err please insert y then enter "
-read fix-surces.list
-if [ $fix-sources.list = "y" ]
+read fixsurceslist
+if [ $fixsources = "y" ]
 then 
 
-git clone http://github.com/profionaldhim/sources.list"
+git clone http://github.com/profionaldhim/sources.list
 cd sources.list
 mv sources.list /
 mv sources.list /
@@ -163,8 +161,8 @@ echo -e $yellow "2- apt update && apt upgrade -y "
 echo ""
 echo ""
 echo -e $yellow "if you want auto fix this err please insert y then enter "
-read fix-pgp
-if [ $fix-pgp = "y" ]
+read fixpgp
+if [ $fixpgp = "y" ]
 then 
 apt-key adv --keyserver hkp://keys.gnupg.net --recv-keys ED444FF07D8D0BF6
 apt update && apt upgrade -y
@@ -180,14 +178,15 @@ clear
 echo ""
 echo "" 
 echo -e $yellow "if you want auto fix this err please insert y then enter "
-read fix-broken
-if [ $fix-broken = "y" ]
+read fixbroken
+if [ $fixbroken = "y" ]
 then 
 apt --fix-broken install
 apt update && apt upgrade -y
 echo -e $yellow "are the err finshed? "
-read no-problem
-if [ $no-problem = "n" ]
+fi
+read noproblem
+if [ $noproblem = "n" ]
 then 
 clear
 echo ""
@@ -196,8 +195,7 @@ fuser -v /var/cache/debconf/config.dat
 rm /var/lib/apt/lists/* -vf
 apt update && apt upgrade -y
 
-fi 
-fi 
+fi  
 bash Tools-Fix-err.sh
 fi 
 if [ $fix_kali = 4 ]
@@ -226,15 +224,14 @@ echo -e $yellow "if this err dpkg /var/lib/dpkg/lock "
 echo ""
 echo "" 
 echo -e $yellow "if you want auto fix this err please insert y then enter "
-read fix-dpkg-rm
-if [ $fix-dpkg-rm = "y" ]
+read fixdpkgrm
+if [ $fixdpkgrm = "y" ]
 then 
 rm /var/lib/dpkg/lock
 echo -e $green " success full"
 
 echo ""
 echo "" 
-bash Tools-Fix-err.sh
 fi 
 bash Tools-Fix-err.sh
 fi 
@@ -247,8 +244,8 @@ echo -e $yellow "if this err dpkg /var/lib/apt/archives/lock "
 echo ""
 echo ""
 echo -e $yellow "if you want auto fix this err please insert y then enter "
-read fix-dpkg-rm2
-if [ $fix-dpkg-rm2 = "y" ]
+read fixdpkgrm2
+if [ $fixdpkgrm2 = "y" ]
 then 
 echo ""
 echo "" 
@@ -290,6 +287,56 @@ echo ""
 echo "" 
 bash Tools-Fix-err.sh
 fi 
+fi
+if [ $name = 2 ]
+then
+clear
+echo ""
+echo ""
+echo -e $green '###################################################'
+echo -e $green '#                              ((()))))           #'
+echo -e $green '#                 88.        ((((())))            #'
+echo -e $green '#                   88.     (((((()))             #'
+echo -e $green '#       88.          88.   (((()))))              #'
+echo -e $green '#        88.         88  ((((())))                #'
+echo -e $green '#           88.      88.    //                    #'
+echo -e $green '#              8888888.    //                     #'
+echo -e $green '#                    \\\  //                      #'
+echo -e $green '#                     \\ //                       #'
+echo -e $green '#                      \\                         #'
+echo -e $green '#       < Fix err >    //                         #'
+echo -e $green '#       Tools-Fix     // \\                       #'
+echo -e $green '#                    //  888888.                  #'
+echo -e $green '#                   // 88       88.               #'
+echo -e $green '#                  //  88         88.             #'
+echo -e $green '#                 \/    88         88.            #'
+echo -e $green '#                         88         88.          #'
+echo -e $green '#################################$%$$$$$$$$$$$$$$++'
+echo ""
+echo ""
+echo -e $green '     ########################################'
+echo -e $green '     #     copy right Mohammed Info        #'
+echo -e $green '     #          2018/8/7 , v 1.0            #'
+echo -e $green '     #            from : Yemen              #'
+echo -e $green '     #        whatsapp:+967733014747        #'
+echo -e $green '     ########################################'
+echo ""
+echo -e $green '      "wellcome in my Tools-Fix. v1.0"'
+echo -e $green '      "$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$"'
+echo ""
+echo "" 
+echo ""
+echo -e $green   "00- Back <==="
+read back
+if [ $back = 00 ]
+then 
+clear
+echo ""
+echo "" 
+bash Tools-Fix-err.sh
+fi 
+
+bash Tools-Fix-err.sh
 fi
 if [ $name = 0 ]
 then 
